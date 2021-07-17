@@ -6,10 +6,6 @@ console.log(num);
 const equal = document.querySelector(".equal")
 // console.log(equal);
 
-clear.addEventListener("click",function(){
-    result.textContent = "0";
-    location.reload()
-})
 
 
 num.forEach(function(element){
@@ -20,6 +16,11 @@ num.forEach(function(element){
         result.textContent += this.textContent
     }
     // console.log(result.textContent);
+})
+
+clear.addEventListener("click",function(){
+    result.textContent = "0";
+    location.reload()
 })
 
 equal.addEventListener("click",function(){
